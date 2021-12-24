@@ -48,10 +48,10 @@ class Lanternfishes_group(Lanternfishes_bf):
 
 def main():
     #day_7_a = Lanternfishes_bf(80)
-    #day_7_a.get_data(r'D:\Coding\Python\handy\cases.txt')
+    #day_7_a.get_data()
     #day_7_a.exponential_growth()
     day_7_b = Lanternfishes_group(256)
-    day_7_b.get_data(r'D:\Coding\Python\handy\cases.txt')
+    day_7_b.get_data(r"your_path")
     day_7_b.exponential_growth()
     print(sum(day_7_b.groups))
 
