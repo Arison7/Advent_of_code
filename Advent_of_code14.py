@@ -10,12 +10,9 @@ def pairwise(iterable):
 class Extended_Polymerization():
     def __init__(self,steps):
         
-        self.polymer_template = {'CH': 'B', 'HH': 'N', 'CB': 'H', 'NH': 'C',
-                            'HB': 'C', 'HC': 'B', 'HN': 'C', 'NN': 'C',
-                            'BH': 'H', 'NC': 'B', 'NB': 'B', 'BN': 'B',
-                            'BB': 'N', 'BC': 'B', 'CC': 'N', 'CN': 'C'}
-        self.polymer = Counter({'NN':1,'NC':1,'CB':1})
-        self.counter = Counter({'N':2,'C':1,'B':1})
+        self.polymer_template = {}
+        self.polymer = Counter()
+        self.counter = Counter()
         
         self.steps = steps
     def expantions(self,steps) -> Dict[str,int]:
