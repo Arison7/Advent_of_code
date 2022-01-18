@@ -1,9 +1,8 @@
 from math import prod
 class parsing:
-    #TODO:delete packages after i am done
-    #TODO: well lucks second subpackage
+    
     #class variable that folds all the packages for easy version summing
-    packages = []
+    
     functions = [sum,prod,min,max,None,lambda x: int(x[0] > x[1]) ,lambda x: int(x[0] < x[1])  ,lambda x: int(x[0] == x[1])]
 
     def __init__(self,binary_representation:str) -> None:
